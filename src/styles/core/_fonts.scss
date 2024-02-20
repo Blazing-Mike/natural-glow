@@ -1,8 +1,73 @@
 @font-face {
-  font-family: "Suisse";
-  src: url("../fonts/SuisseIntl-Book.woff2") format("woff2"),
-    url("../fonts/SuisseIntl-Book.woff") format("woff");
-  font-weight: 500;
+  font-family: "Lato";
+  src:
+    url("../../fonts/Lato-Thin.woff2") format("woff2"),
+    url("../../fonts/Lato-Thin.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../../fonts/Lato-Light.woff2") format("woff2"),
+    url("../../fonts/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../../fonts/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:
+    url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:
+    url("../../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:
+    url("../../fonts/PlayfairDisplay-BoldItalic.woff2 BoldItalic.woff2")
+      format("woff2"),
+    url("../../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+.heading {
+  font-family: $font-heading;
+  font-weight: 400;
+}
+.light-text {
+  font-family: $font-body;
+  font-weight: 300;
+}
+
+.normal-text {
+  font-family: $font-body;
+  font-size: 24px;
+  font-weight: 400;
 }

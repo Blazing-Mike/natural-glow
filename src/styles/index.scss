@@ -12,4 +12,11 @@
 @import "shared/sections";
 @import "shared/fonts";
 
+@import "components/hero";
 @import "components/button";
+@import "components/nav";
+@import "components/preloader";
+@import "components/_section-one";
+@import "components/_section-two";
+
+@import "pages/home";

@@ -1,0 +1,107 @@
+.section-two {
+  background-color: $wheat;
+  padding: 60px;
+
+  .heading {
+    font-size: 64px;
+    max-width: 60rem;
+    line-height: 64px;
+    margin-left: 180px;
+  }
+
+  .para {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: $font-body;
+    width: 600px;
+    margin: 40px 10px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      position: relative;
+
+      .textTwo {
+        text-transform: lowercase;
+        font-family: $font-body;
+        font-size: 32px;
+        font-weight: 300;
+        position: absolute;
+        bottom: 0;
+        max-width: 585px;
+        right: -15rem;
+        z-index: 50;
+      }
+    }
+
+    .right {
+      margin-top: 6rem;
+      position: relative;
+      display: flex;
+      align-self: end;
+      align-content: end;
+    }
+  }
+
+  .block {
+    margin: 5rem;
+  }
+
+  .second-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 1rem;
+    .left {
+      .image-container {
+        display: flex;
+        position: relative;
+        gap: 15px;
+        margin: 4rem 0;
+
+        img {
+          object-fit: contain;
+        }
+        .second-image {
+          align-self: end;
+        }
+        .absolute-image {
+          position: absolute;
+          bottom: -10rem;
+          right: 30%;
+        }
+      }
+    }
+
+    .right {
+      text-align: right;
+      margin-top: 8rem;
+
+      img {
+        object-fit: contain;
+      }
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .text {
+        max-width: 337px;
+        font-size: 28px;
+        text-align: right;
+        margin-top: 4rem;
+      }
+
+      .shopicon {
+        margin-top: 10rem;
+      }
+      .normal-text {
+        max-width: 500px;
+        margin-right: 10rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.section-one {
+  background: $lemon;
+
+  .text-container {
+    padding: 60px 80px;
+  }
+
+  .heading {
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: 64px;
+
+    .wrapper-textimage {
+      display: inline-flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
+  .bodytext {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 10%;
+    .para {
+      font-family: $font-body;
+      width: 47rem;
+      font-size: 22px;
+      text-align: right;
+      text-wrap: wrap;
+    }
+  }
+
+  .container {
+    padding: 60px 120px 30px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+
+    .imageone {
+      align-self: end;
+      margin-bottom: -4rem;
+    }
+
+    .imagetwo {
+      margin-left: -10rem;
+    }
+
+    .imagethree {
+      grid-column: -2 / -1;
+      grid-row: -2 /-1;
+      justify-self: end;
+    }
+  }
+
+  .container-two {
+    padding: 60px 120px 30px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .light-lato-medium {
+      font-family: $font-body;
+      font-weight: 300;
+      font-size: 30px;
+    }
+
+    .embrace-text {
+      width: 34rem;
+    }
+
+    .item-two {
+      grid-column: 2 / 3;
+      grid-row: -2 /-1;
+      align-self: end;
+      position: relative;
+      margin-top: 3rem;
+      margin-left: -8rem;
+
+      .vitamin {
+        position: absolute;
+        bottom: 5rem;
+        z-index: 1;
+      }
+
+      .experience-text {
+        width: 50rem;
+        z-index: 10;
+        position: relative;
+      }
+    }
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 200%;
+    margin: 5rem 0;
+  }
+}

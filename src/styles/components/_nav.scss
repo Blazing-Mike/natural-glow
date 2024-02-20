@@ -1,0 +1,60 @@
+.standard-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.normal-flex {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  padding: 30px 48px 40px 80px;
+  @extend .normal-flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+
+  .nav__links{
+    @extend .normal-flex;
+    gap: 40px;
+
+  .nav__link{
+    font-family: $font-body;
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+  }
+  }
+
+  .nav__options {
+    color: $white;
+    @extend .normal-flex;
+    gap: 26px;
+
+    .nav__options__lang{
+      @extend .normal-flex;
+      gap: 8px;
+    }
+  }
+}
+
+.logo {
+  font-family: $font-heading;
+  color: $white;
+  font-size: 32px;
+  font-weight: 700;
+
+  .text1{
+    font-style: italic;
+  }
+
+  .text2{
+    margin-left: -7px;
+    font-style: normal;
+  }
+
+
+}

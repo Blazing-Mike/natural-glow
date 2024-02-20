@@ -1,0 +1,22 @@
+.hero {
+  background-image: url(../herobackground.png);
+  background-size: cover;
+  height: 100vh;
+
+  .hero__text {
+    font-size: 96px;
+    font-family: $font-heading;
+    text-align: center;
+    font-weight: 700;
+    color: $white;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 40%;
+
+    .text1, .text2{
+      display: block;
+      line-height: 1;
+    }
+  }
+}
