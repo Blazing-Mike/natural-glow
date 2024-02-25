@@ -6,7 +6,7 @@
     font-size: 64px;
     max-width: 60rem;
     line-height: 64px;
-    margin-left: 180px;
+    margin-left: 160px;
   }
 
   .para {
@@ -15,7 +15,7 @@
     font-weight: 300;
     font-family: $font-body;
     width: 600px;
-    margin: 40px 10px;
+    margin: 40px 20px;
   }
 
   .flex {
@@ -54,7 +54,7 @@
   .second-flex {
     display: flex;
     justify-content: space-between;
-    margin: 5rem 1rem;
+    margin: 5rem 2rem;
     .left {
       .image-container {
         display: flex;
@@ -71,7 +71,7 @@
         .absolute-image {
           position: absolute;
           bottom: -10rem;
-          right: 30%;
+          right: 3%;
         }
       }
     }

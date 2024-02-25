@@ -1,0 +1,39 @@
+.section-three {
+  padding: 100px 60px;
+  .heading {
+    text-align: center;
+    font-size: 64px;
+  }
+  .para {
+    text-align: center;
+    font-family: $font-body;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .grid {
+    margin: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 25px;
+
+    .image-container {
+      width: 413px;
+      height: 496px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .link-container {
+    text-align: center;
+
+    .products-link {
+      text-transform: uppercase;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+  }
+}

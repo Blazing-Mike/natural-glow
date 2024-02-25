@@ -2,6 +2,10 @@
   background-image: url(../herobackground.png);
   background-size: cover;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .hero__text {
     font-size: 96px;
@@ -14,9 +18,15 @@
     right: 0%;
     top: 40%;
 
-    .text1, .text2{
+    .text1,
+    .text2 {
       display: block;
       line-height: 1;
     }
   }
+}
+
+.blank{
+  height: 100vh;
+  width: 100vw;
 }
