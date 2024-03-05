@@ -2,7 +2,7 @@
   background: $lemon;
 
   .text-container {
-    padding: 300px 80px;
+    padding: 200px 80px;
   }
 
   .heading {
@@ -50,6 +50,7 @@
       grid-column: -2 / -1;
       grid-row: -2 /-1;
       justify-self: end;
+      transform: rotate(50deg);
     }
   }
 

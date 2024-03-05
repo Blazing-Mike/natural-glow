@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 gsap.registerPlugin(Observer);
-//gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.set(".hero__text", { y: 550, transform: "rotate(-20deg)" });
 gsap.set(".nav", { opacity: 0 });
@@ -23,7 +23,7 @@ tl.to(".preloader", {
     ease: "power4.out",
   })
   .to(".prl-img", {
-    duration: 3,
+    duration: 2,
     width: "100vw",
     height: "100vh",
     transform: "rotate(0deg)",
@@ -32,7 +32,7 @@ tl.to(".preloader", {
     ".prl-logo",
     {
       y: -450,
-      duration: 3,
+      duration: 1,
     },
     "<"
   )
@@ -52,7 +52,7 @@ tl.to(".preloader", {
   .to(
     ".hero__text",
     {
-      duration: 2,
+      duration: 1,
       y: 0,
       opacity: 1,
       transform: "rotate(0deg)",
@@ -60,14 +60,12 @@ tl.to(".preloader", {
     "<"
   );
 
-gsap.to("#sectiontwo-heading", {
-  x: -200,
-  scrollTrigger: {
-    trigger: "#sectiontwo-textcontainer", // this will use the first box as the trigger
-    start: "center 70%",
-    scrub: true,
-  },
-});
+  gsap.to(".imagethree", {
+    duration: 2,
+    scrollTrigger: "#product-grid", // start animation when ".box" enters the viewport
+    transform: "rotate(0deg)",
+  });
+
 
 let loop = horizontalLoop(".image", { speed: 1, repeat: -1, paddingRight: 25 });
 function setDirection(value) {
