@@ -1,20 +1,20 @@
 import { gsap } from "gsap";
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
 gsap.registerPlugin(Observer);
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.set(".hero__text", { y: 550, transform: "rotate(-20deg)" });
 gsap.set(".nav", { opacity: 0 });
 
-tl.to(".preloader", {
-  duration: 2,
-  opacity: 0,
+tl.to(".black-bg", {
+  duration: 1,
   width: "0%",
+  //delay: 2,
 })
-  .to(".white-bg", {
-    duration: 3,
-    opacity: 0,
+  .to(".grey-bg", {
+    duration: 1,
     width: "0%",
   })
   .from(".prl-logo", {
@@ -22,30 +22,26 @@ tl.to(".preloader", {
     y: 450,
     ease: "power4.out",
   })
-  .to(".prl-img", {
+  .from(".prl-img", {
     duration: 2,
-    width: "100vw",
-    height: "100vh",
-    transform: "rotate(0deg)",
+    scale: 0.5,
+    transform: "rotate(40deg)",
   })
+  // .set(".prl-img", { clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)" })
   .to(
     ".prl-logo",
     {
-      y: -450,
+      y: -500,
       duration: 1,
     },
-    "<"
+    "<0.5"
   )
-  .to(
-    ".nav",
-    {
-      delay: 0.5,
-      duration: 2.5,
-      opacity: 1,
-    },
-    "<"
-  )
-  .to(".brown-bg, .grey-bg", {
+  .to(".nav", {
+    duration: 2,
+    opacity: 1,
+    delay: -2,
+  })
+  .to(".brown-bg, .grey-bg, .white-bg", {
     display: "none",
     opacity: 0,
   })
@@ -58,14 +54,20 @@ tl.to(".preloader", {
       transform: "rotate(0deg)",
     },
     "<"
-  );
-
-  gsap.to(".imagethree", {
-    duration: 2,
-    scrollTrigger: "#product-grid", // start animation when ".box" enters the viewport
-    transform: "rotate(0deg)",
+  )
+  .to(".hero", {
+    position: "relative",
   });
 
+gsap.to(".imagethree", {
+  scrollTrigger: {
+    trigger: ".imagethree",
+    scrub: true,
+    start: "top top",
+    toggleActions: "play pause resume reset",
+  },
+  transform: "rotate(0deg)",
+});
 
 let loop = horizontalLoop(".image", { speed: 1, repeat: -1, paddingRight: 25 });
 function setDirection(value) {

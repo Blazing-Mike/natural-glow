@@ -3,6 +3,10 @@
 
   .text-container {
     padding: 200px 80px;
+
+    span {
+      display: block;
+    }
   }
 
   .heading {
@@ -50,7 +54,7 @@
       grid-column: -2 / -1;
       grid-row: -2 /-1;
       justify-self: end;
-      transform: rotate(50deg);
+      transform: rotate(60deg);
     }
   }
 
